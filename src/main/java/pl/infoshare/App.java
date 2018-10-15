@@ -1,6 +1,10 @@
 package pl.infoshare;
 
+<<<<<<< HEAD
 import java.util.Random;
+=======
+import javax.sound.midi.Soundbank;
+>>>>>>> f2258dca02acd701949e2669f4e15d5916af64b2
 import java.util.Scanner;
 
 /**
@@ -11,70 +15,90 @@ public class App
 {
     public static void main( String[] args )
     {
-       /*
-       Pierwsze zajecia
-
-
-        String name = "Karol";
-        String lastName = "Mazanowski";
-
-        byte age = 26;
-        String city = "Rypin";
-
-        System.out.println(name + " " + lastName);
-
-
-        System.out.println(age + "\t" + city);
 
         /*
+        Zadanie 1
+        */
+
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter an integer: ");
+        int numberFromKeyboard = scanner.nextInt();
+        System.out.println("Floatig-point number version: " + (double) numberFromKeyboard);
+
+        /*
+        Zadanie 2
+        */
+
+
+        Scanner scanner1 = new Scanner(System.in);
+
+        System.out.print("Enter your age: ");
+        int userAge = scanner1.nextInt();
+
+        if (userAge >= 18 && userAge < 123) {
+            System.out.println("You are of age.");
+        } else if (userAge > 123) {
+            System.out.println("You are incredible old!");
+        } else {
+            System.out.println("You are underage.");
+        }
+
+        /*
+<<<<<<< HEAD
         Rzutowanie
 
+=======
+        Zadanie 3
+         */
+>>>>>>> f2258dca02acd701949e2669f4e15d5916af64b2
 
-        double a = (double) 5;
-        System.out.println(a);
-        double b = 2.34;
-        double c = 10.506;
+        Scanner scanner2 = new Scanner(System.in);
 
-        double result = b/c;
+        System.out.print("Login: ");
+        String login = scanner2.nextLine();
+        System.out.print("Password: ");
+        String password = scanner2.nextLine();
 
-        System.out.println(result);
-        System.out.println("Wynik to: " + b/c);
+        String user0 = "admin";
+        String user1 = "user1";
+        String user2 = "user2";
 
+<<<<<<< HEAD
         /*
         Instrukcja warunkowa
 
+=======
+        String password0 = "hasło";
+        String password1 = "hasło1";
+        String password2 = "hasło2";
+>>>>>>> f2258dca02acd701949e2669f4e15d5916af64b2
 
-        byte age1 = 18;
 
-
-        if (age1 >= 20 && age1 <= 30)
+        if (login.equals(user0))
         {
-            System.out.println("Jestes pelnoletni");
+            if (password.equals(password0))
+            {
+            System.out.println("You have logged in as an admin");
+            }
         }
-        else if (age1 == 26 || age1 == 28)
+        if (login.equals(user1))
         {
-            System.out.println("Masz 26 lub 28 lat");
+            if (password.equals(password1))
+            {
+                System.out.println("You have logged in as user1");
+            }
         }
-        else{
-            System.out.println("Masz ponizej 20 lat");
+        if (login.equals(user2))
+        {
+            if (password.equals(password2))
+            {
+                System.out.println("You have logged in as user2");
+            }
         }
 
-        int agePrim = 20;
 
-        switch (agePrim){
-            case 20:{
-                System.out.println("Wiek jest rowny 20");
-                break;
-            }
-            case 30:{
-                System.out.println("Wiek jest rowny 30");
-                break;
-
-            }
-            default:{
-                System.out.println("Wiek jest inny");
-                break;
-            }
 
     } */
        /*
