@@ -1,10 +1,10 @@
 package pl.infoshare;
 
-<<<<<<< HEAD
+
 import java.util.Random;
-=======
+
 import javax.sound.midi.Soundbank;
->>>>>>> f2258dca02acd701949e2669f4e15d5916af64b2
+
 import java.util.Scanner;
 
 /**
@@ -18,7 +18,7 @@ public class App
 
         /*
         Zadanie 1
-        */
+
 
 
         Scanner scanner = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class App
 
         /*
         Zadanie 2
-        */
+
 
 
         Scanner scanner1 = new Scanner(System.in);
@@ -46,13 +46,10 @@ public class App
         }
 
         /*
-<<<<<<< HEAD
-        Rzutowanie
 
-=======
         Zadanie 3
-         */
->>>>>>> f2258dca02acd701949e2669f4e15d5916af64b2
+
+
 
         Scanner scanner2 = new Scanner(System.in);
 
@@ -65,15 +62,14 @@ public class App
         String user1 = "user1";
         String user2 = "user2";
 
-<<<<<<< HEAD
+
         /*
         Instrukcja warunkowa
 
-=======
         String password0 = "hasło";
         String password1 = "hasło1";
         String password2 = "hasło2";
->>>>>>> f2258dca02acd701949e2669f4e15d5916af64b2
+
 
 
         if (login.equals(user0))
