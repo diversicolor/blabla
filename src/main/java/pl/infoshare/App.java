@@ -203,7 +203,7 @@ public class App
       }
 */
 // Zadanie 3 Lekcja 3
-
+/*
         int winningNumber = new Random().nextInt( 10) + 1;
 
         Scanner guess = new Scanner(System.in);
@@ -223,6 +223,60 @@ public class App
             else System.out.println("Graj dalej");
 
         }
+*/
+
+        Scanner askOfNumber = new Scanner(System.in); //nowy obiekt pytajacy o numer
+
+        System.out.print("Please, enter six number from 1 to 49: ");
+
+        int [] userNumbers = new int[6]; //tablica 'teoretycznie' przechowujaca liczby
+
+
+        int choices = 0;
+
+        do{
+            userNumbers[choices] = askOfNumber.nextInt();
+            choices++;
+
+        } while (choices < 6);
+
+        if(userNumbers.length <=6) {
+            int [] drawnNumbers = new int[6];
+            Random lottery  = new Random();
+
+            System.out.print("Drawn number are: ");
+            for(int i = 0; i<6; i++) {
+
+                drawnNumbers[i] = lottery.nextInt(49) + 1;
+                System.out.print(drawnNumbers[i] + " ");
+
+            }
+
+            System.out.println();
+
+
+            int winningNumbers = 0;
+
+            for(int i = 0; i < drawnNumbers.length; i++) {
+                for (int j = 0; j < userNumbers.length; j++) {
+
+                    if (drawnNumbers[i] == userNumbers[j]) {
+
+                        System.out.println("You lucky! : " + drawnNumbers[i]);
+                        winningNumbers++;
+
+                    }
+
+                }
+            }
+            System.out.println("Numbers of right choices: "+ winningNumbers);
+
+
+
+
+        }
+
+
 
 
 
