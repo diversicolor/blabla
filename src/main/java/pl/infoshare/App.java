@@ -1,6 +1,12 @@
 package pl.infoshare;
 
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Random;
 
 import javax.sound.midi.Soundbank;
@@ -13,8 +19,7 @@ import java.util.Scanner;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) throws IOException {
 
         /*
         Zadanie 1
@@ -224,7 +229,7 @@ public class App
 
         }
 */
-
+/*
         Scanner askOfNumber = new Scanner(System.in); //nowy obiekt pytajacy o numer
 
         System.out.print("Please, enter six number from 1 to 49: ");
@@ -275,6 +280,64 @@ public class App
 
 
         }
+*/
+        //Zadanie 1 lekcja 4 22.10.2018
+        /*
+        String names [] = new String[5];
+        names[0] = "Mirek";
+        names[1] = "Krystyna";
+        names[2] = "Mariusz";
+        names[3] = "Bozena";
+        names[4] = "Janusz";
+        PrintWriter saveNames = new PrintWriter("./names.txt");
+        for(int i = 0; i < names.length; i++) {
+
+            saveNames.println(names[i] + "\n");
+
+        }
+        saveNames.close();
+        */
+
+        //Zadanie 2 lekcja 4 22.10.2018
+        /*
+
+        System.out.print("Enter your name and surname: ");
+        Scanner readName = new Scanner(System.in);
+        String UserNames = readName.nextLine();
+        String UserNames1 = readName.nextLine();
+        String UserNames2 = readName.nextLine();
+
+
+
+        PrintWriter saveUserNames = new PrintWriter("./UserNames.txt");
+        saveUserNames.println(UserNames);
+        saveUserNames.println(UserNames1);
+        //saveUserNames.append(UserNames2);// dodaje a nie nadpisuje jak println
+        saveUserNames.close();
+        */
+
+        //Zadanie 3 lekcja 4 22.10.2018
+
+        //Zadanie 4 lekcja 4 22.10.2018
+
+        Scanner takesText = new Scanner(System.in);
+
+        System.out.println("Enter something: ");
+
+        String text = takesText.nextLine();
+        PrintWriter reverse = new PrintWriter("./Reverse.txt");
+        //reverse.print(new StringBuilder(text).reverse().toString());
+        String reversText;
+        char[] letters = text.toCharArray();
+        for(int i = letters.length - 1; i >= 0; i--){
+            reversText+=letters[i];
+        }
+
+        //czegos brakuje
+
+
+
+
 
 
 
