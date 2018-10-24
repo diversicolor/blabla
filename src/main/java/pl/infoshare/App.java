@@ -320,6 +320,7 @@ public class App
 
         //Zadanie 4 lekcja 4 22.10.2018
 
+        /*
         Scanner takesText = new Scanner(System.in);
 
         System.out.println("Enter something: ");
@@ -327,13 +328,44 @@ public class App
         String text = takesText.nextLine();
         PrintWriter reverse = new PrintWriter("./Reverse.txt");
         //reverse.print(new StringBuilder(text).reverse().toString());
-        String reversText;
+        String reversText = "";
         char[] letters = text.toCharArray();
         for(int i = letters.length - 1; i >= 0; i--){
             reversText+=letters[i];
         }
 
-        //czegos brakuje
+        reverse.print(reversText);
+        reverse.close();
+        */
+
+        int a = 1000;
+        byte b = (byte) a;
+
+        System.out.println(a + "\n" + b);
+
+        String username = "admin1";
+
+        switch (username){
+            case "admin2" : {
+                System.out.println("Siema");
+                break;
+            }
+            case "admin1" :
+            case "admin" : {
+                System.out.println("Tu cos sie dzieje, jezeli admin");
+                break;
+            }
+            default: {
+                System.out.println("Nie jestes adminem");
+            }
+        }
+
+
+
+
+
+
+        
 
 
 
