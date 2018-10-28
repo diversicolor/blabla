@@ -1,12 +1,14 @@
 package pl.infoshare;
 
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.PrintWriter;
+import sun.font.ScriptRun;
+
+import java.io.*;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.Random;
 
 import javax.sound.midi.Soundbank;
@@ -320,7 +322,7 @@ public class App
 
         //Zadanie 4 lekcja 4 22.10.2018
 
-        /*
+/*
         Scanner takesText = new Scanner(System.in);
 
         System.out.println("Enter something: ");
@@ -331,13 +333,13 @@ public class App
         String reversText = "";
         char[] letters = text.toCharArray();
         for(int i = letters.length - 1; i >= 0; i--){
-            reversText+=letters[i];
+            reversText += letters[i];
         }
 
         reverse.print(reversText);
         reverse.close();
-        */
-
+*/
+/*
         int a = 1000;
         byte b = (byte) a;
 
@@ -359,13 +361,89 @@ public class App
                 System.out.println("Nie jestes adminem");
             }
         }
+*/
+        //Zadanie 4 lekcja 4 22.10.2018
+
+        /*
+        Scanner takesText = new Scanner(System.in);
+
+        System.out.println("Enter something: ");
+
+        String text = takesText.nextLine();
+        PrintWriter reverse = new PrintWriter("./Reverse.txt");
+        //reverse.print(new StringBuilder(text).reverse().toString());
+        String reversText = "";
+        char[] letters = text.toCharArray();
+        for(int i = letters.length - 1; i >= 0; i--){
+            reversText += letters[i];
+        }
+
+        reverse.print(reversText);
+        reverse.close();
+        */
+//****************************************ZADANIA DOMOWE***************************************************************
+        //Zadanie 5 22.10.18
+
+        Files.move(Paths.get("D:\\ProgramowanieJava\\blabla\\Reverse.txt"),
+            Paths.get("C:\\Users\\Gokiburi\\Desktop\\Reverse.txt"),
+                StandardCopyOption.REPLACE_EXISTING);
+        Files.copy(Paths.get("C:\\Users\\Gokiburi\\Desktop\\Reverse.txt"),
+                Paths.get("C:\\Users\\Gokiburi\\Desktop\\ReverseCopy.txt"),
+                StandardCopyOption.REPLACE_EXISTING);
+
+        File Reverse = new File("C:\\Users\\Gokiburi\\Desktop\\Reverse.txt");
+        Scanner inReverse = new Scanner(Reverse);
+        String sentence = inReverse.nextLine();
+
+        PrintWriter backToNormal = new PrintWriter("C:\\Users\\Gokiburi\\Desktop\\ReverseCopy.txt");
+        backToNormal.print(new StringBuilder(sentence).reverse().toString());
+
+        backToNormal.close();
+
+    //Praca domowa
+
+        URL homeWork = new URL("https://www.w3.org/TR/PNG/iso_8859-1.txt");
+        BufferedReader bufferedReader = new BufferedReader( new InputStreamReader(homeWork.openStream()));
+
+        Files.createFile(Paths.get("./TXT.txt"));
+
+        String onlineTxt;
+        PrintWriter save = new PrintWriter("./TXT.txt");
+        int numbersOfLine = 0;
+        while ((onlineTxt = bufferedReader.readLine()) != null)
+        {
+            System.out.println(onlineTxt);
+            save.println(onlineTxt);
+            numbersOfLine++;
+        }
+        save.close();
+
+
+        BufferedReader splittingColumns = new BufferedReader(new FileReader("./TXT.txt"));
+        String lines = splittingColumns.readLine();
+        String[] columns = lines.split("            ");
+
+        int eachLines = 0
+        while(eachLines < numbersOfLine && eachLines > 8) {
+
+            columns = lines.split("            ");
+            eachLines++;
+        }
+        System.out.println(columns[1]);
 
 
 
 
 
 
-        
+
+
+
+
+
+
+
+
 
 
 
@@ -380,7 +458,4 @@ public class App
 
 
     }
-
-
-
 }
