@@ -1,6 +1,8 @@
 package pl.infoshare;
 
 
+import pl.infoshare.five.Blabla;
+import pl.infoshare.five.Calculator;
 import sun.font.ScriptRun;
 
 import java.io.*;
@@ -9,6 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.sql.SQLOutput;
 import java.util.Random;
 
 import javax.sound.midi.Soundbank;
@@ -383,7 +386,7 @@ public class App
         */
 //****************************************ZADANIA DOMOWE***************************************************************
         //Zadanie 5 22.10.18
-
+/*
         Files.move(Paths.get("D:\\ProgramowanieJava\\blabla\\Reverse.txt"),
             Paths.get("C:\\Users\\Gokiburi\\Desktop\\Reverse.txt"),
                 StandardCopyOption.REPLACE_EXISTING);
@@ -430,6 +433,22 @@ public class App
             eachLines++;
         }
         System.out.println(columns[1]);
+
+*/
+
+//        Calculator calculator = new Calculator();
+//
+//        System.out.println(calculator.add(5,5));
+//        System.out.println(calculator.divide(5,5));
+//        System.out.println(calculator.multiply(5,5));
+//        System.out.println(calculator.substract(5,5));
+
+
+       
+
+
+
+
 
 
 
