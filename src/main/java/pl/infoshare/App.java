@@ -1,8 +1,12 @@
 package pl.infoshare;
 
 
-import pl.infoshare.five.Blabla;
+
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import pl.infoshare.five.Calculator;
+import pl.infoshare.five.Stringii;
+import pl.infoshare.six.Polychaeta;
+import pl.infoshare.six.User;
 import sun.font.ScriptRun;
 
 import java.io.*;
@@ -443,38 +447,53 @@ public class App
 //        System.out.println(calculator.multiply(5,5));
 //        System.out.println(calculator.substract(5,5));
 
+//        Stringii blat = new Stringii();
+//        System.out.println(blat.field);
+//        someMethod(blat);
+//        System.out.println(blat.field);
+//        someMethod(blat);
+//        System.out.println(blat.field);
+//        someMethod(blat);
+//        System.out.println(blat.field);
+//        someMethod(blat);
+//        System.out.println(blat.field);
+//    }
+//
+//    public static void someMethod (Stringii stringii){
+//        stringii.field += "x";
+//    }
+// Zad 1
+//        System.out.print("Provide username: ");
+//        String username = readUserInput();
+//
+//        System.out.print("Provide password: ");
+//        String password = readUserInput();
+//
+//        User user = new User(username, password);
+//
+//        System.out.println("Created new user: " + user.getUsername() + " " + "with password: " + user.getPassword());
+//    }
+//
+//    private static String readUserInput(){
+//        Scanner scanner = new Scanner(System.in);
+//        return scanner.nextLine();
+//    }
 
-       
+        System.out.print("Provide username: ");
+        String username = readUserInput();
 
+        System.out.print("Provide password: ");
+        String password = readUserInput();
 
+        User user = new User(username, password);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        System.out.println("Created new user: " + user.getUsername() + " " + "with password: " + user.getPassword());
     }
+
+    private static String readUserInput(){
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
+    }
+
+
 }
