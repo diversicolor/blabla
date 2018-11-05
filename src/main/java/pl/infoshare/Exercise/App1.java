@@ -2,12 +2,14 @@ package pl.infoshare.Exercise;
 
 
 import java.io.IOException;
+import java.util.Calendar;
+import java.util.Locale;
 
 /**
  * Hello world!
  *
  */
-public class App {
+public class App1 {
     public static void main(String[] args) throws IOException {
 
 
@@ -466,7 +468,13 @@ public class App {
 ////
 ////    private static String readUserInput(){
 ////        Scanner scanner = new Scanner(System.in);
-////        return scanner.nextLine();
+////
+//        return scanner.nextLine();
+
+
+        Calendar calendar = Calendar.getInstance(Locale.GERMANY);
+
+        System.out.println(calendar.getTime());
    }
 
 }

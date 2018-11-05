@@ -1,6 +1,8 @@
 package pl.infoshare;
 
 import pl.infoshare.six.User;
+
+import java.awt.*;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -120,6 +122,9 @@ public class App {
                 }
                 break;
             }
+            case "0": {
+                break;
+            }
             default: {
                 System.out.println("Error");
                 break;
@@ -133,7 +138,7 @@ public class App {
         do {
             Console();
         }
-        while();
+        while(!readUserInput().equals("0"));
     }
 
 
