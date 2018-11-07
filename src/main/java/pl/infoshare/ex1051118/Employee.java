@@ -9,7 +9,7 @@ public class Employee{
     private String lastName;
     private String department;
 
-    public void Employee(dateOfBirth, name, lastName, department){
+    public Employee(LocalDate dateOfBirth, String name, String lastName, String department){
         this.getDateOfBirth();
         this.getName();
         this.getLastName();
