@@ -4,6 +4,7 @@ package pl.infoshare.Exercise;
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.Locale;
+import java.util.Scanner;
 
 /**
  * Hello world!
@@ -472,9 +473,18 @@ public class App1 {
 //        return scanner.nextLine();
 
 
-        Calendar calendar = Calendar.getInstance(Locale.GERMANY);
+//        Calendar calendar = Calendar.getInstance(Locale.GERMANY);
+//
+//        System.out.println(calendar.getTime());
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Provide a: ");
+//        int a = scanner.nextInt();
+//        System.out.print("Provide b: ");
+//        int b = scanner.nextInt();
+//
+//        int result = (a*a)+(2*a*b)+(b*b);
+//        System.out.println("The result of the square of the sum is: " + result);
 
-        System.out.println(calendar.getTime());
    }
 
 }
