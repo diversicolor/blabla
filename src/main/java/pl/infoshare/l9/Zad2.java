@@ -1,6 +1,5 @@
 package pl.infoshare.l9;
 
-import pl.infoshare.l9.zad1.Car;
 import pl.infoshare.l9.zad1.Fiat;
 import pl.infoshare.l9.zad2.Citroen;
 

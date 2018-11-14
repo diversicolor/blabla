@@ -1,4 +1,4 @@
-package pl.infoshare.second_class.zad1;
+package pl.infoshare.l2.zad1;
 
 import java.util.Scanner;
 

@@ -1,6 +1,6 @@
-package pl.infoshare.second_class;
+package pl.infoshare.l2;
 
-import pl.infoshare.second_class.zad1.MenuService;
+import pl.infoshare.l2.zad1.MenuService;
 
 public class Zad1 {
 

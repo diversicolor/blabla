@@ -1,6 +1,4 @@
-package pl.infoshare.second_class.zad3;
-
-import javafx.scene.control.PasswordField;
+package pl.infoshare.l2.zad3;
 
 import java.util.Scanner;
 

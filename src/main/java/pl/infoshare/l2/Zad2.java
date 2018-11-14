@@ -1,6 +1,6 @@
-package pl.infoshare.second_class;
+package pl.infoshare.l2;
 
-import pl.infoshare.second_class.zad2.Start;
+import pl.infoshare.l2.zad2.Start;
 
 public class Zad2 {
 

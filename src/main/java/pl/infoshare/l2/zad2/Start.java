@@ -1,4 +1,4 @@
-package pl.infoshare.second_class.zad2;
+package pl.infoshare.l2.zad2;
 
 public class Start {
 
