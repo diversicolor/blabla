@@ -5,7 +5,7 @@ public class MathOperation implements FundMathOp {
 
     @Override
     public <T extends Number> double add(T a, T b) {
-        return a + b;
+        return a.doubleValue() + b.doubleValue();
     }
 
     @Override
