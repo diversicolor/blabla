@@ -10,15 +10,15 @@ public class MathOperation implements FundMathOp {
 
     @Override
     public <T extends Number> double divide(T a, T b) {
-        return a / b;
+        return a.doubleValue() / b.doubleValue();
     }
     @Override
     public <T extends Number> double substract(T a, T b) {
-        return a - b;
+        return a.doubleValue() - b.doubleValue();
     }
 
     @Override
     public <T extends Number> double multiply(T a, T b) {
-        return a * b;
+        return a.doubleValue() * b.doubleValue();
     }
 }

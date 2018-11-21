@@ -1,6 +1,6 @@
 package pl.infoshare.l11;
 
-public class Lekcja11 {
+public class L11 {
 
     public static void main (String[] args){
 
