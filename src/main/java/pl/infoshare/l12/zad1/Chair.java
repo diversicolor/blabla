@@ -2,7 +2,7 @@ package pl.infoshare.l12.zad1;
 
 import java.util.Objects;
 
-public class Chair() {
+public class Chair{
 
     private int numberOflegs;
     private String material;
