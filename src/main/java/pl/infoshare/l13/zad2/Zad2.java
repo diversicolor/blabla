@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public static void main (String[] args){
+
 
 
 public class Zad2 {
@@ -23,23 +23,22 @@ public class Zad2 {
 
         List<String> lines = new ArrayList<>();
 
-        while(s.hasNext()){
+        while (s.hasNext()) {
             lines.add(s.nextLine());
         }
 
-        System.out.println("Time to read the book: " + ((System.currentTimeMillis() - start)/1000) + "s");
+        System.out.println("Time to read the book: " + ((System.currentTimeMillis() - start) / 1000) + "s");
 
         System.out.println(lines.size());
 
         lines.stream().filter(p -> !p.equals("\n"))
-                .map(p ->{
-                String a = p.replaceAll("\\.", "");
-                a = a.replaceAll(",","");
-                return a.split(" ").length;
+                .map(p -> {
+                    String a = p.replaceAll("\\.", "");
+                    a = a.replaceAll(",", "");
+                    return a.split(" ").length;
                 })
                 .collect(Collectors.toList());
-        System.out.println(number);
-
+        //  System.out.println(number);
 
 
     }
