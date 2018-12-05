@@ -6,6 +6,8 @@ public class UserInfoTab extends BasePanel {
 
     private final String TITLE = "User Info";
 
+
+
     @Override
     protected void configureComponent() {
     }
